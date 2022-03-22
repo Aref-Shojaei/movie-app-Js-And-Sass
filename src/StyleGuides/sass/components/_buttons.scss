@@ -1,0 +1,32 @@
+// ** Button Components
+.btn{
+    @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+    color: $white-100-color;
+    background-color: $primary-400-color;
+    border-radius: 12px;
+    padding: $space-4 $space-7;
+    cursor: pointer;
+    @include flex(flex,center,null,null,null);
+    .btn-icon-prepend{
+        margin-right:$space-3;
+    }
+    .btn-icon-append{
+        margin-left:$space-3;
+    }
+}
+
+.btn-hover{
+    background-color: $primary-500-color;
+    transition: background-color .5s ease;
+}
+
+.btn-active{
+    border: 2px solid $primary-500-color;
+    
+}
+
+.btn-disabled{
+    background-color: #3C3A7B;
+    color: #71747F;
+}
+

@@ -1,0 +1,137 @@
+// ** Popup Components
+
+.added-suggestion-popup {
+    max-width: 560px;
+    max-height: 432px;
+    position: relative;
+    padding: $space-11;
+    background-color: rgba(18, 24, 41, 0.8);
+    border: 1px solid $gray-800-color;
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+
+    .close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: $space-6;
+        right: $space-6;
+        padding: $space-3;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(24px);
+        border-radius: 8px;
+    }
+
+    .content {
+        @include flex(flex,center,space-between,null,column);
+
+        i {
+            width: 120px;
+            height: 120px;
+        }
+
+        h4 {
+            margin: $space-6 auto;
+            color: $gray-100-color;
+            @include font($h4-font,$h4-font-size,$h4-line-height,$h4-letter-spacing);
+        }
+
+        p {
+            @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+            text-align: center;
+            color: $gray-400-color;
+        }
+    }
+}
+
+.suggestion-popup {
+    max-width: 560px;
+    max-height: 472px;
+    position: relative;
+    padding: $space-11;
+    background-color: rgba(18, 24, 41, 0.8);
+    border: 1px solid $gray-800-color;
+    backdrop-filter: blur(40px);
+    border-radius: 24px;
+
+    .close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: $space-6;
+        right: $space-6;
+        padding: $space-3;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(24px);
+        border-radius: 8px;
+    }
+
+    .content {
+        @include flex(flex,center,space-between,null,column);
+        h4 {
+            @include font($h4-font,$h4-font-size,$h4-line-height,$h4-letter-spacing);
+            color: $gray-100-color;
+        }
+
+        form{
+            margin: $space-8 auto;
+            .input-group {
+                &:not(:first-child){
+                    margin-top: $space-5;
+                }
+                @include flex(flex,center,space-between,null,null);
+                padding: $space-4 $space-5;
+                border: 1px solid $gray-700-color;
+                border-radius: 12px;
+                color: #0000001A;
+                width: 344px;
+                height: 64px;
+            
+                .input-group-prepend {
+                    margin-right: $space-5;
+                }
+            
+                .input-group-append {
+                    margin-left: $space-5;
+                }
+            
+                .input-group-label {
+                    @include flex(flex,null,null,null,column);
+                    width: 100%;
+            
+                    label {
+                        @include font($caption-font,$caption-font-size,$caption-line-height,$caption-letter-spacing);
+                        color: $gray-600-color;
+                    }
+            
+                    input {
+                        background: none;
+                        @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+                        color: $gray-400-color;
+                    }
+                }
+            
+                input {
+                    width: 100%;
+                    background: none;
+            
+                    &::placeholder {
+                        @include font($caption-font,$caption-font-size,$caption-line-height,$caption-letter-spacing);
+                        color: $gray-600-color;
+                    }
+                }
+            }
+            .btn{
+                margin-top: $space-8 !important;
+                margin-left: 0 !important;
+                text-align: center;
+                padding: $space-5;
+                @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+                color: $white-100-color;
+                background-color: $primary-400-color;
+                border-radius: 12px;
+                width: 100%;
+                cursor: pointer;
+                @include flex(flex,center,center,null,null);
+            }
+        }
+    }
+}

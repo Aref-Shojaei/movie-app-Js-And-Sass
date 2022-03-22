@@ -1,0 +1,14 @@
+@mixin flex($flex,$align,$justify,$warp,$direction) {
+    display: $flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $warp;
+    flex-direction: $direction;
+}
+
+@mixin font($name,$size,$line-height,$letter-spacing) {
+    font-family: $name;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}

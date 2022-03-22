@@ -1,0 +1,148 @@
+//** ------------------ Icons ------------------ **//
+
+$width:24px;
+$height:24px;
+
+.icon{
+    width: $width;
+    height: $height;
+}
+
+$route : '../icons';
+
+//** All Icons
+
+.gold-star-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/gold-star.svg) no-repeat center center;
+}
+.purple-add-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/purple-add.svg) no-repeat center center;
+}
+.success-video-tick-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/success-video-tick.svg) no-repeat center center;
+}
+
+.purple-like-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/purple-like.svg) no-repeat center center;
+}
+
+.brand-icon{
+    display: block;
+    background: url(#{$route}/brand.svg) no-repeat center center;
+    height: 80px;
+    width: 80px;
+}
+.brand-with-name-icon{
+    display: block;
+    background: url(#{$route}/brand-with-name.svg) no-repeat center center;
+    height: 80px;
+    width: 488px
+}
+.add-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/add.svg) no-repeat center center;
+}
+.arrow-right-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/arrow-right.svg) no-repeat center center;
+}
+.close-square-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/close-square.svg) no-repeat center center;
+}
+.eye-slash-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/eye-slash.svg) no-repeat center center;
+}
+.eye-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/eye.svg) no-repeat center center;
+}
+.filter-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/filter.svg) no-repeat center center;
+}
+.key-square-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/key-square.svg) no-repeat center center;
+}
+.like-large-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/like-large.svg) no-repeat center center;
+}
+.like-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/like.svg) no-repeat center center;
+}
+.link-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/link.svg) no-repeat center center;
+}
+.logOut-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/logout.svg) no-repeat center center;
+}
+.placeHolder-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/placeholder.svg) no-repeat center center;
+}
+.search-normal-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/search-normal.svg) no-repeat center center;
+}
+.sms-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/sms.svg) no-repeat center center;
+}
+.star-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/star.svg) no-repeat center center;
+}
+.thankYou-large-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/thankyou-large.svg) no-repeat center center;
+}
+.tick-circle-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/tick-circle.svg) no-repeat center center;
+}
+.user-square-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/user-square.svg) no-repeat center center;
+}
+.video-play-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/video-play.svg) no-repeat center center;
+}
+.video-tick-icon{
+    @extend .icon;
+    display: block;
+    background: url(#{$route}/video-tick.svg) no-repeat center center;
+}

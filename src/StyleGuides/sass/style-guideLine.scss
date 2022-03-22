@@ -1,0 +1,17 @@
+//** ------------------ Main Styles ------------------ **//
+@import './reset';
+@import './mixins';
+@import './spacing';
+@import './colors';
+@import './grid';
+@import './typography';
+@import './icons';
+
+//** ------------------ Component Styles ------------------ **//
+
+@import './components/navbar';
+@import './components/inputs';
+@import './components/buttons';
+@import './components/card';
+@import './components/placeholder';
+@import './components/popups';

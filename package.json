@@ -1,0 +1,25 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "This project is  new style-guideLine + movie templates",
+  "main": "app.js",
+  "scripts": {
+    "webpack": "webpack",
+    "babel-styleGuideLine":"babel src/styleGuides/js/app.js -o dist/assets/scripts/bundle.js --presets env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aref-Shojaei/movie-app-with-sass-js.git"
+  },
+  "author": "aref shojaei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aref-Shojaei/movie-app-with-sass-js/issues"
+  },
+  "homepage": "https://github.com/Aref-Shojaei/movie-app-with-sass-js#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

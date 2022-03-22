@@ -1,0 +1,67 @@
+// ** Card Component
+.card {
+    background-color: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(80px);
+    border-radius: 12px;
+    padding: $space-3 $space-3 $space-5 $space-3;
+
+    .card-img {
+        position: relative;
+        max-width: 266px;
+        max-height: 400px;
+        margin-bottom: $space-5;
+        img{
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+        }
+
+        span.rating-button {
+            width: 47px;
+            height: 40px;
+            @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+            background-color: rgba(0, 0, 0, 0.65);
+            color: $warning-400-color;
+            /* Note: backdrop-filter has minimal browser support */
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+            position: absolute;
+            top: $space-3;
+            left: $space-3;
+            padding: $space-3;
+            @include flex(flex,center,center,null,null);
+            i {
+                margin-right: $space-2;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .content {
+        padding: $space-3;
+        a.card-title {
+            @include font($linkRegular-font,$linkRegular-font-size,$linkRegular-line-height,$linkRegular-letter-spacing);
+            color: $gray-50-color;
+        }
+
+        .action {
+            margin-top: $space-5;
+            @include font($linkRegular-font,$linkRegular-font-size,$linkRegular-line-height,$linkRegular-letter-spacing);
+            @include flex(flex,center,null,null,null);
+            a{
+                color: $primary-400-color;
+            }
+            i {
+                margin-right: $space-3;
+            }
+            &#card-watched{
+                a{
+                    color: $success-400-color;
+                }
+            }
+        }
+
+    }
+
+}

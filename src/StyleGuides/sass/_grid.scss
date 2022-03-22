@@ -1,0 +1,32 @@
+//** ------------------ Grid System ------------------ **//
+
+
+$gutter_left_and_right : 12px;
+$column : col;
+
+
+.container-fluid{
+    width: 100%;
+    padding: 0 $gutter_left_and_right;
+}
+
+.container{
+    max-width: 1248px;
+    margin: 0 120px;
+    padding: 0 $gutter_left_and_right;
+}
+
+.row{
+    @include flex(flex,null,null,wrap,null);
+}
+
+[class ^='col-']{
+    padding: 0 $gutter_left_and_right;
+}
+
+@for $i from 1 through 12 {
+    $value : 100% / 12;
+    .#{$column}-#{$i}{
+        width: $value * $i;
+    }
+}

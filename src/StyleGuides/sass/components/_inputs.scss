@@ -1,0 +1,43 @@
+// ** input Components
+.input-group {
+    @include flex(flex,center,space-between,null,null);
+    padding: $space-4 $space-5;
+    border: 1px solid $gray-700-color;
+    border-radius: $space-4;
+    width: 344px;
+    height: 64px;
+
+    .input-group-prepend {
+        margin-right: $space-5;
+    }
+
+    .input-group-append {
+        margin-left: $space-5;
+    }
+
+    .input-group-label {
+        @include flex(flex,null,null,null,column);
+        width: 100%;
+
+        label {
+            @include font($caption-font,$caption-font-size,$caption-line-height,$caption-letter-spacing);
+            color: $gray-600-color;
+        }
+
+        input {
+            background: none;
+            @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+            color: $gray-400-color;
+        }
+    }
+
+    input {
+        @include font($bodyRegular-font,$bodyRegular-font-size,$bodyRegular-line-height,$bodyRegular-letter-spacing);
+        width: 100%;
+        background: none;
+        &::placeholder {
+            @include font($caption-font,$caption-font-size,$caption-line-height,$caption-letter-spacing);
+            color: $gray-600-color;
+        }
+    }
+}

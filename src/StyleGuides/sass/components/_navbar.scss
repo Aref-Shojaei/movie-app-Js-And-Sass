@@ -1,0 +1,43 @@
+// ** Navbar Components
+nav#navbar {
+    .row {
+        @include flex(flex,center,space-between,null,null);
+    }
+
+    .menu {
+        @include flex(flex,center,null,null,null);
+
+        li {
+            padding: $space-4 $space-5;
+            &:not(:first-child) {
+                margin-left: $space-5;
+            }
+            a {
+                @include font($linkRegular-font,$linkRegular-font-size,$linkRegular-line-height,$linkRegular-letter-spacing);
+                color: $gray-200-color;
+            }
+
+            &#logOut {
+                padding: $space-4 $space-7;
+                @include flex(flex,center,null,null,null);
+                i {
+                    margin-right: $space-3;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            &#suggest {
+                padding: $space-4 $space-7;
+                @include flex(flex,center,null,null,null);
+                i {
+                    margin-left: $space-3;
+                    width: $space-5;
+                    height: $space-5;
+                }
+            }
+        }
+
+    }
+
+}

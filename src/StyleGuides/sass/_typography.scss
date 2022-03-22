@@ -1,0 +1,114 @@
+//** ------------------ Typography ------------------ **//
+
+// ** Fonts
+$font-regular:'poppins-regular';
+$font-semiBold:'poppins-semiBold';
+$font-bold:'poppins-bold';
+
+$route : '../fonts';
+
+@font-face {
+    font-family: $font-regular;
+    src: url(#{$route}/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: $font-semiBold;
+    src: url(#{$route}/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: $font-bold;
+    src: url(#{$route}/Poppins-Bold.ttf);
+}
+
+// ** Font Styles
+
+    //** H1 Styles
+    $h1-font: $font-semiBold;
+    $h1-font-size:64px;
+    $h1-line-height:80px;
+    $h1-letter-spacing:-2%;
+    //** H2 Styles
+    $h2-font: $font-semiBold;
+    $h2-font-size:48px;
+    $h2-line-height:56px;
+    $h2-letter-spacing:-2%;
+    //** H3 Styles
+    $h3-font: $font-semiBold;
+    $h3-font-size:32px;
+    $h3-line-height:40px;
+    $h3-letter-spacing:-2%;
+    //** H4 Styles
+    $h4-font: $font-bold;
+    $h4-font-size:24px;
+    $h4-line-height:32px;
+    $h4-letter-spacing:-1.5%;
+    //** H5 Styles
+    $h5-font: $font-bold;
+    $h5-font-size:20px;
+    $h5-line-height:24px;
+    $h5-letter-spacing:-1.5%;
+    //** H6 Styles
+    $h6-font: $font-bold;
+    $h6-font-size:16px;
+    $h6-line-height:24px;
+    $h6-letter-spacing:-1.5%;
+
+
+
+
+    //** Body-large Styles
+    $bodyLarge-font: $font-regular;
+    $bodyLarge-font-size:20px;
+    $bodyLarge-line-height:32px;
+    $bodyLarge-letter-spacing:0%;
+    //** Body-regular Styles
+    $bodyRegular-font: $font-regular;
+    $bodyRegular-font-size:16px;
+    $bodyRegular-line-height:24px;
+    $bodyRegular-letter-spacing:0%;
+    //** Body-small Styles
+    $bodySmall-font: $font-regular;
+    $bodySmall-font-size:14px;
+    $bodySmall-line-height:24px;
+    $bodySmall-letter-spacing:0%;
+    //** Body-extraSmall Styles
+    $bodyExtraSmall-font: $font-regular;
+    $bodyExtraSmall-font-size:12px;
+    $bodyExtraSmall-line-height:24px;
+    $bodyExtraSmall-letter-spacing:0%;
+
+
+    //** Caption Styles
+    $caption-font: $font-regular;
+    $caption-font-size:14px;
+    $caption-line-height:16px;
+    $caption-letter-spacing:0%;
+
+
+    //** OverLine-regular Styles
+    $overLineRegular-font: $font-bold;
+    $overLineRegular-font-size:14px;
+    $overLineRegular-line-height:24px;
+    $overLineRegular-letter-spacing:4%;
+    //** OverLine-small Styles
+    $overLineSmall-font: $font-bold;
+    $overLineSmall-font-size:12px;
+    $overLineSmall-line-height:16px;
+    $overLineSmall-letter-spacing:4%;
+
+
+    //** Link-regular Styles
+    $linkRegular-font: $font-semiBold;
+    $linkRegular-font-size:16px;
+    $linkRegular-line-height:24px;
+    $linkRegular-letter-spacing:2%;
+    //** Link-small Styles
+    $linkSmall-font: $font-semiBold;
+    $linkSmall-font-size:14px;
+    $linkSmall-line-height:24px;
+    $linkSmall-letter-spacing:2%;
+    //** Link-extraSmall Styles
+    $linkExtraSmall-font: $font-semiBold;
+    $linkExtraSmall-font-size:12px;
+    $linkExtraSmall-line-height:16px;
+    $linkExtraSmall-letter-spacing:2%;
